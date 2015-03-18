@@ -1,0 +1,5 @@
+formatter.name: pretty
+suites:
+    main:
+        namespace: Loicm\Shopify
+        psr4_prefix: Loicm\Shopify
