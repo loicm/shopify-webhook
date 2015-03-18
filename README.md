@@ -1,8 +1,10 @@
 # Verify Shopify Webhooks signature
 
-Shopify has a [Webhooks features](https://docs.shopify.com/api/webhooks/using-webhooks) and they can be verified by calculating a digital signature.
+Shopify has [Webhooks features](https://docs.shopify.com/api/webhooks/using-webhooks) which have to verified by calculating a digital signature.
 
 Here is a small class to do the job.
+
+I use this is a tiny project to try [phpspec](http://www.phpspec.net/).
 
 
 ## Install
