@@ -3,7 +3,7 @@
     "desc": "Check Shopify Webhooks by verifying their digital signature",
     "keywords": ["shopify", "api", "webhook"],
     "homepage": "https://github.com/loicm/shopify-webhook",
-    "licence": "The Unlicense",
+    "licence": "unlicense",
     "authors": [
         {
             "name": "Loïc Mathaud",
