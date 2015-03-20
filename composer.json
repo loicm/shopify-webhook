@@ -1,6 +1,6 @@
 {
     "name": "loicm/shopify-webhook",
-    "desc": "Check Shopify Webhooks by verifying their digital signature",
+    "desc": "Receive Shopify Webhooks",
     "keywords": ["shopify", "api", "webhook"],
     "homepage": "https://github.com/loicm/shopify-webhook",
     "licence": "unlicense",
@@ -19,5 +19,8 @@
         "psr-4": {
             "Loicm\\Shopify\\": "src"
         }
+    },
+    "require": {
+        "symfony/http-foundation": "~2.6"
     }
 }
