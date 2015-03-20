@@ -1,4 +1,4 @@
-# Verify Shopify Webhooks signature
+# Receive a Webhook from Shopify
 
 Shopify has [Webhooks features](https://docs.shopify.com/api/webhooks/using-webhooks) which have to verified by calculating a digital signature.
 
