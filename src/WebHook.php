@@ -93,4 +93,12 @@ class WebHook
     {
         return $this->http_request;
     }
+
+    /**
+     * @return array data
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
 }
