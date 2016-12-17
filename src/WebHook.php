@@ -40,22 +40,11 @@ class WebHook
     }
 
     /**
-     * @param string $data body content of the POST request from Shopify
-     * @param string $hmac_header X-Shopify-Hmac-Sha256 HTTP header
      * @return bool
      */
     public function verify()
     {
-        $calculated_hmac = base64_encode(
-            hash_hmac(
-                'sha256',
-                json_encode($this->getDataFromRequest()),
-                $this->secret_key,
-                true
-            )
-        );
-
-        return ($calculated_hmac === $this->getSignatureFromRequest());
+        return $this->calculatedSignature() === $this->getSignatureFromRequest();
     }
 
     /**
@@ -100,5 +89,17 @@ class WebHook
     public function getData()
     {
         return $this->data;
+    }
+
+    protected function calculatedSignature()
+    {
+        return base64_encode(
+            hash_hmac(
+                'sha256',
+                json_encode($this->getDataFromRequest()),
+                $this->secret_key,
+                true
+            )
+        );
     }
 }
