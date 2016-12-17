@@ -1,6 +1,6 @@
 # Receive a Webhook from Shopify
 
-Shopify has [Webhooks features](https://docs.shopify.com/api/webhooks/using-webhooks) which have to verified by calculating a digital signature.
+Shopify has [Webhooks features](https://docs.shopify.com/api/webhooks/using-webhooks) which have to be verified by calculating a digital signature.
 
 Here is a small class to receive the POST request, verify the signature integrity and getting the data.
 
