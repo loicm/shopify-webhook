@@ -18,7 +18,7 @@ composer require loicm/shopify-webhook
 ```
 use Loicm\Shopify\WebHook;
 
-$shopify_secret = 'Here is your secret key'
+$shopify_secret = 'Here is your secret key';
 
 $webhook = new WebHook($shopify_secret);
 
